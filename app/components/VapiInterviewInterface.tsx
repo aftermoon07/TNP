@@ -32,9 +32,9 @@ export default function VapiInterviewInterface({ config, onExit }: VapiInterview
 
     // Initialize Vapi
     useEffect(() => {
-        const apiKey = process.env.NEXT_PUBLIC_VAPI_WEB_TOKEN;
+        const apiKey = process.env.NEXT_PUBLIC_VAPI_WEB_TOKEN || process.env.NEXT_PUBLIC_VAPI_API_KEY;
         if (!apiKey) {
-            console.error('Missing NEXT_PUBLIC_VAPI_WEB_TOKEN');
+            console.error('Missing NEXT_PUBLIC_VAPI_WEB_TOKEN or NEXT_PUBLIC_VAPI_API_KEY');
             setError('Vapi Web Token is missing. Please check your environment variables.');
             return;
         }
