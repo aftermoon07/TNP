@@ -2,11 +2,20 @@
   <h1>🎓 TNP Placement Portal</h1>
   <p>An AI-powered Training & Placement management platform for students, mentors, and recruiters.</p>
 
+  <a href="https://tnp-pearl.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-tnp--pearl.vercel.app-black?style=for-the-badge&logo=vercel" alt="Live Demo" />
+  </a>
+  <br /><br />
+
   ![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
   ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
   ![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-green?logo=supabase)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwindcss)
 </div>
+
+---
+
+> 🌐 **Live Website**: [https://tnp-pearl.vercel.app](https://tnp-pearl.vercel.app)
 
 ---
 
@@ -50,7 +59,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yashagrawal8329/TNP.git
+git clone https://github.com/aftermoon07/TNP.git
 cd TNP
 
 # 2. Install dependencies
@@ -83,7 +92,7 @@ Key variables:
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | ✅ | Supabase public anon key |
 | `NEXT_PUBLIC_GOOGLE_AI_API_KEY` | ✅ | Gemini AI API key |
 | `OPENAI_API_KEY` | ⬜ | OpenAI key (Gemini used as fallback) |
-| `NEXT_PUBLIC_VAPI_API_KEY` | ⬜ | VAPI key for voice mock interviews |
+| `NEXT_PUBLIC_VAPI_WEB_TOKEN` | ⬜ | VAPI public key for voice mock interviews |
 
 ---
 
