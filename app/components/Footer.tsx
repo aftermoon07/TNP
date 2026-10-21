@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">TNP:RGIT</h3>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">TNP</h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400 text-base">
               AI-powered education platform that helps students with placement preparation, resume building, coding practice and much more.
             </p>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-8 border-t border-slate-200 dark:border-slate-800 pt-8 md:flex md:items-center md:justify-between">
           <p className="text-base text-gray-500 dark:text-gray-400 md:order-1">
-            &copy; 2024 TNP:RGIT. All rights reserved.
+            &copy; 2024 TNP. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 md:order-2">
             <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold uppercase">

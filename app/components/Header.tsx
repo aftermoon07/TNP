@@ -67,7 +67,7 @@ const Header: React.FC = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-indigo-500/30 transition-shadow">
                 <span className="text-white text-lg">💼</span>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent hidden sm:block">TNP:RGIT</span>
+              <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent hidden sm:block">TNP</span>
             </Link>
           </div>
 
