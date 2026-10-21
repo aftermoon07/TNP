@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="mt-4 md:mt-0 md:order-2">
             <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold uppercase">
-              Powered by Yash Agrawal and Developed by Yash Agrawal
+              Powered and Developed by Aditya Suryawanshi
             </p>
           </div>
         </div>

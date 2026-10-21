@@ -34,7 +34,7 @@ git clone https://github.com/<your-username>/TNP.git
 cd TNP
 
 # 2. Add the upstream remote
-git remote add upstream https://github.com/yashagrawal8329/TNP.git
+git remote add upstream https://github.com/aftermoon07/TNP.git
 
 # 3. Install dependencies
 npm install
@@ -130,7 +130,7 @@ docs(readme): add environment variable table
 
 ## Reporting Issues
 
-Use [GitHub Issues](https://github.com/yashagrawal8329/TNP/issues) to report bugs or request features.
+Use [GitHub Issues](https://github.com/aftermoon07/TNP/issues) to report bugs or request features.
 
 When filing a bug report, please include:
 - Steps to reproduce
