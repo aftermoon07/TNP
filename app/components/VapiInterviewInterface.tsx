@@ -32,18 +32,40 @@ export default function VapiInterviewInterface({ config, onExit }: VapiInterview
 
     // Initialize Vapi
     useEffect(() => {
-        const apiKey = process.env.NEXT_PUBLIC_VAPI_WEB_TOKEN || process.env.NEXT_PUBLIC_VAPI_API_KEY;
-        if (!apiKey) {
-            console.error('Missing NEXT_PUBLIC_VAPI_WEB_TOKEN or NEXT_PUBLIC_VAPI_API_KEY');
-            setError('Vapi Web Token is missing. Please check your environment variables.');
-            return;
-        }
+        let vapiInstance: Vapi | null = null;
 
-        const vapiInstance = new Vapi(apiKey);
-        setVapi(vapiInstance);
+        const initializeVapi = async () => {
+            let apiKey = process.env.NEXT_PUBLIC_VAPI_WEB_TOKEN || process.env.NEXT_PUBLIC_VAPI_API_KEY;
+
+            if (!apiKey) {
+                try {
+                    const res = await fetch('/api/vapi-token');
+                    if (res.ok) {
+                        const data = await res.json();
+                        apiKey = data.token;
+                    }
+                } catch (e) {
+                    console.warn('Could not fetch token from /api/vapi-token', e);
+                }
+            }
+
+            if (!apiKey) {
+                console.error('Missing NEXT_PUBLIC_VAPI_WEB_TOKEN or NEXT_PUBLIC_VAPI_API_KEY');
+                setError('Vapi Web Token is missing. Please check your environment variables.');
+                return;
+            }
+
+            vapiInstance = new Vapi(apiKey);
+            setVapi(vapiInstance);
+            setError(null);
+        };
+
+        initializeVapi();
 
         return () => {
-            vapiInstance.stop();
+            if (vapiInstance) {
+                vapiInstance.stop();
+            }
         };
     }, []);
 
