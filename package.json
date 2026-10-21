@@ -1,6 +1,8 @@
 {
-  "name": "hr-website",
+  "name": "tnp-portal",
   "version": "0.1.0",
+  "description": "AI-powered Training & Placement portal for students, mentors, and recruiters",
+  "author": "Aditya Suryawanshi <adityasuryawanshi234@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
